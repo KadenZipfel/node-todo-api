@@ -30,7 +30,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
   // });
   
   db.collection('Todos').insertOne({
-    name: 'Walk the dog',
+    name: 'Dance',
     completed: false
   }, (err, result) => {
     if(err) {
