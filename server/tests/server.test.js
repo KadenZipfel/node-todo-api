@@ -244,3 +244,14 @@ describe('POST /users', () => {
       .end(done);
   });
 });
+
+describe('POST /users/login', () => {
+  var email = 'kaden@example.com';
+  var password = 'password123';
+  
+  it('should compare user credentials upon login', (done) => {
+    request(app)
+      .post('/users/login')
+      .send({})
+  });
+});
